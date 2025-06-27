@@ -1,0 +1,7 @@
+{
+  "name": "angular-website-template",
+  "short_name": "angular-website-template",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./"
+}

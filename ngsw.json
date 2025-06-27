@@ -1,0 +1,62 @@
+{
+  "configVersion": 1,
+  "timestamp": 1751041864400,
+  "index": "/angular-website-template/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/angular-website-template/favicon.ico",
+        "/angular-website-template/index.html",
+        "/angular-website-template/main-XSPRAB3W.js",
+        "/angular-website-template/manifest.webmanifest",
+        "/angular-website-template/polyfills-FFHMD2TL.js",
+        "/angular-website-template/styles-NHP5X6B3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/angular-website-template/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/angular-website-template/index.html": "bc0293747263a0ab8e822a777cac65d6de3f1c09",
+    "/angular-website-template/main-XSPRAB3W.js": "93c0d86031e59f274337baed9e0d26f9976841c0",
+    "/angular-website-template/manifest.webmanifest": "6c6f48e64b056a73c7669e8287f79662d7fb8d7e",
+    "/angular-website-template/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/angular-website-template/styles-NHP5X6B3.css": "bc38f76279f8c258fb02db86086b0b0f8a997a41"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
