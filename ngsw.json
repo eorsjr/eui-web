@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751098757833,
+  "timestamp": 1751102852835,
   "index": "/angular-website-template/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/angular-website-template/favicon.ico",
         "/angular-website-template/index.html",
-        "/angular-website-template/main-VIKO23EW.js",
+        "/angular-website-template/main-ZDAVIKJC.js",
         "/angular-website-template/manifest.webmanifest",
         "/angular-website-template/polyfills-FFHMD2TL.js",
         "/angular-website-template/styles-NHP5X6B3.css"
@@ -34,8 +34,8 @@
   "dataGroups": [],
   "hashTable": {
     "/angular-website-template/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angular-website-template/index.html": "f516f7bf9422a0e5d529446eefa660c05adb6fe5",
-    "/angular-website-template/main-VIKO23EW.js": "9203ee5dd40e49c9d0b613ec9e146902ff36ca04",
+    "/angular-website-template/index.html": "2709036e5e620eaed3ffe492c3c7bb1feb8a54da",
+    "/angular-website-template/main-ZDAVIKJC.js": "2a7406d1ddc0cc36463e61f13a8892c4f3e54a4e",
     "/angular-website-template/manifest.webmanifest": "6c6f48e64b056a73c7669e8287f79662d7fb8d7e",
     "/angular-website-template/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/angular-website-template/styles-NHP5X6B3.css": "bc38f76279f8c258fb02db86086b0b0f8a997a41"
