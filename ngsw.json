@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1751296219339,
-  "index": "/angular-website-template/dev/index.html",
+  "timestamp": 1751296599904,
+  "index": "/angular-website-template/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/angular-website-template/dev/favicon.ico",
-        "/angular-website-template/dev/index.html",
-        "/angular-website-template/dev/main-4FMPSFYV.js",
-        "/angular-website-template/dev/manifest.webmanifest",
-        "/angular-website-template/dev/polyfills-FFHMD2TL.js",
-        "/angular-website-template/dev/styles-QLWHZY4F.css"
+        "/angular-website-template/favicon.ico",
+        "/angular-website-template/index.html",
+        "/angular-website-template/main-4FMPSFYV.js",
+        "/angular-website-template/manifest.webmanifest",
+        "/angular-website-template/polyfills-FFHMD2TL.js",
+        "/angular-website-template/styles-QLWHZY4F.css"
       ],
       "patterns": []
     },
@@ -33,12 +33,12 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/angular-website-template/dev/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angular-website-template/dev/index.html": "3d4de3b4cc5c2254bbec29efd68fe4a3e8aa73f4",
-    "/angular-website-template/dev/main-4FMPSFYV.js": "f45ba450fb00e46f161ba0979fd8c4c7d9b2ec15",
-    "/angular-website-template/dev/manifest.webmanifest": "6c6f48e64b056a73c7669e8287f79662d7fb8d7e",
-    "/angular-website-template/dev/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
-    "/angular-website-template/dev/styles-QLWHZY4F.css": "959922b1a387019d4823461359333f913ba5544e"
+    "/angular-website-template/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/angular-website-template/index.html": "e50acac08ebd054f739f44fc8ceea64abac7a1fe",
+    "/angular-website-template/main-4FMPSFYV.js": "f45ba450fb00e46f161ba0979fd8c4c7d9b2ec15",
+    "/angular-website-template/manifest.webmanifest": "6c6f48e64b056a73c7669e8287f79662d7fb8d7e",
+    "/angular-website-template/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/angular-website-template/styles-QLWHZY4F.css": "959922b1a387019d4823461359333f913ba5544e"
   },
   "navigationUrls": [
     {
