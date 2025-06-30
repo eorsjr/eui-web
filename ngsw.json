@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751297414533,
+  "timestamp": 1751311993241,
   "index": "/angular-website-template/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/angular-website-template/favicon.ico",
         "/angular-website-template/index.html",
-        "/angular-website-template/main-4FMPSFYV.js",
+        "/angular-website-template/main-2QVKMS4P.js",
         "/angular-website-template/manifest.webmanifest",
         "/angular-website-template/polyfills-FFHMD2TL.js",
         "/angular-website-template/styles-QLWHZY4F.css"
@@ -34,8 +34,8 @@
   "dataGroups": [],
   "hashTable": {
     "/angular-website-template/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angular-website-template/index.html": "e50acac08ebd054f739f44fc8ceea64abac7a1fe",
-    "/angular-website-template/main-4FMPSFYV.js": "f45ba450fb00e46f161ba0979fd8c4c7d9b2ec15",
+    "/angular-website-template/index.html": "a2f5f0e6a136b03350554d94e3be44749a44ce21",
+    "/angular-website-template/main-2QVKMS4P.js": "6b59f4a1e6a7315261f1829a26fc5d4caed79908",
     "/angular-website-template/manifest.webmanifest": "6c6f48e64b056a73c7669e8287f79662d7fb8d7e",
     "/angular-website-template/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/angular-website-template/styles-QLWHZY4F.css": "959922b1a387019d4823461359333f913ba5544e"
