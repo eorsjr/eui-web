@@ -1,0 +1,24 @@
+/* || Slidehow */
+
+.slideshow-container {
+    aspect-ratio: 2.4/1;
+}
+
+.slideshow-image {
+    display: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

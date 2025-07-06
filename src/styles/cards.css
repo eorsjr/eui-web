@@ -1,0 +1,78 @@
+/* || Card related global styles */
+
+.card .hero-content {
+    aspect-ratio: 16/9;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.card .hero-content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+}
+
+/* || Side-by-side */
+
+.side-by-side {
+    display: flex;
+    justify-content: center;
+}
+
+/* For compact, medium and expanded window classes */
+@media (max-width: 1199px) {
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    .side-by-side .left-side,
+    .side-by-side .right-side {
+        width: 100%;
+    }
+}
+
+/* For large and extra-large window classes */
+@media (min-width:1200px) {
+    .side-by-side .left-side {
+        margin-right: auto;
+        width: 47.5%;
+        max-width: 47.5%;
+    }
+
+    .side-by-side .right-side {
+        margin-left: auto;
+        width: 47.5%;
+        max-width: 47.5%;
+    }
+}
+
+/* || Clickable image */
+
+.clickable-image {
+    position: relative;
+    display: inline-block;
+    transition: box-shadow 250ms ease-in-out;
+}
+
+@media (hover:none) {
+    .clickable-image:active {
+        box-shadow: var(--elevation-level-1);
+        transition: none;
+    }
+}
+
+@media (hover:hover) {
+    .clickable-image:hover {
+        box-shadow: var(--elevation-level-1);
+    }
+}
+
+.clickable-image img {
+    display: block;
+    cursor: pointer;
+}

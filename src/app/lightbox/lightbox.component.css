@@ -1,0 +1,55 @@
+/* || Lightbox */
+
+.lightbox {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+    left: env(safe-area-inset-left);
+    right: env(safe-area-inset-right);
+}
+
+.lightbox.visible {
+    display: flex;
+}
+
+#lightbox-image {
+    max-height: 66vh;
+    max-width: 100vw;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#lightbox-image.fade-in {
+    opacity: 1;
+}
+
+#lightbox-caption {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* || Lightbox buttons */
+
+.lightbox #close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 4;
+}
+
+.lightbox #previous-button {
+    position: absolute;
+    left: 24px;
+    z-index: 4;
+}
+
+.lightbox #next-button {
+    position: absolute;
+    right: 24px;
+    z-index: 4;
+}

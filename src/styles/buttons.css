@@ -1,0 +1,27 @@
+/* || Button related global styles */
+
+/* || Action area */
+
+.action-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.action-area .common-button {
+    margin: initial !important;
+}
+
+/* || General button */
+
+button {
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

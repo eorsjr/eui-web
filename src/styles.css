@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./styles/buttons.css";
+@import "./styles/cards.css";
+@import "./styles/custom-elevation-levels.css";
+@import "./styles/custom-shape-tokens.css";
+@import './styles/general.css';
+@import "./styles/theme-baseline.css";
+@import "./styles/theme-blue.css";
+@import "./styles/theme-green.css";
+@import "./styles/theme-orange.css";
+@import "./styles/theme-pink.css";
+@import "./styles/theme-silver.css";
+@import "./styles/theme-yellow.css";

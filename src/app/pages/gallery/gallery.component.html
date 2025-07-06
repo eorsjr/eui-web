@@ -1,0 +1,24 @@
+<h1>Gallery</h1>
+<main>
+    <eui-card [variant]="'elevated'">
+        <div class="hero-content">
+            <eui-slideshow [images]="[
+                { src: 'https://placehold.co/1600x900', alt: 'Template Image 1600x900' },
+                { src: 'https://placehold.co/3000x2000', alt: 'Template Image 3000x2000' },
+                { src: 'https://placehold.co/4000x3000', alt: 'Template Image 4000x3000' }
+            ]" />
+        </div>
+        <h2>Elevated Card</h2>
+        <h3>Subhead</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Justo eget magna fermentum iaculis eu non. Ipsum dolor sit amet consectetur.
+            Quis ipsum suspendisse ultrices gravida dictum fusce ut. Sodales ut eu sem integer vitae justo eget
+            magna.</p>
+        <eui-image-grid [images]="[
+            {src: 'https://placehold.co/4000x3000', width: '4000px', height: '3000px', alt: 'Template Image 4000x3000'},
+            {src: 'https://placehold.co/2000x2500', width: '2000px', height: '2500px', alt: 'Template Image 2000x2500'},
+            {src: 'https://placehold.co/3000x2000', width: '3000px', height: '2000px', alt: 'Template Image 3000x2000'},
+            {src: 'https://placehold.co/1600x900', width: '1600px', height: '900px', alt: 'Template Image 1600x900'}
+        ]" />
+    </eui-card>
+</main>

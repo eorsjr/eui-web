@@ -1,0 +1,45 @@
+/* || Pane */
+
+.pane {
+    overflow: auto;
+    margin-top: 64px;
+    border-radius: 28px;
+    background-color: var(--md-sys-color-background);
+}
+
+/* For compact and medium window classes */
+@media (max-width: 839px) {
+    body {
+        overflow: scroll;
+    }
+
+    .pane {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+
+    /* For standalone mode */
+    @media (display-mode:standalone) {
+        .pane {
+            padding-bottom: calc(80px + 12px);
+        }
+    }
+}
+
+/* For expanded, large and extra-large window classes */
+@media (min-width: 840px) {
+    body {
+        overflow: hidden;
+    }
+
+    .pane {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        width: calc(100% - 80px - (16px * 2) - env(safe-area-inset-left) - env(safe-area-inset-right));
+        margin-left: calc(80px + env(safe-area-inset-left));
+        margin-right: env(safe-area-inset-right);
+    }
+}

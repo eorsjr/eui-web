@@ -1,0 +1,27 @@
+/* || Image grid */
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* For compact, medium and expanded window classes */
+@media (max-width:1199px) {
+    .image-grid .clickable-image {
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+
+/* For large and extra-large window classes */
+@media (min-width:1200px) {
+    .image-grid .clickable-image {
+        flex: 32%;
+        max-width: 32%;
+    }
+}
