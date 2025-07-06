@@ -3,5 +3,10 @@
   "short_name": "EUI",
   "display": "standalone",
   "scope": "./",
-  "start_url": "./"
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "./favicon.ico"
+    }
+  ]
 }
