@@ -24,13 +24,6 @@ export class PaneComponent {
    * @returns {void}
    */
   ngOnInit(): void {
-    const pane = document.querySelector('.pane');
-    if (pane) {
-      pane.classList.add('preload');
-      setTimeout(() => {
-        pane.classList.remove('preload');
-      }, 100);
-    }
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -44,6 +37,13 @@ export class PaneComponent {
               target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
           }, 0);
+        }
+        const pane = document.querySelector('.pane');
+        if (pane) {
+          pane.classList.add('preload');
+          setTimeout(() => {
+            pane.classList.remove('preload');
+          }, 100);
         }
       });
   }
