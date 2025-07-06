@@ -1,0 +1,153 @@
+/* || General */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--md-sys-color-surface-container);
+}
+
+body {
+    width: 100%;
+    line-height: 150%;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* || Typescale */
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    /* Display Small */
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 44px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+h2 {
+    /* Headline Large */
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    margin: 32px 0;
+}
+
+h3 {
+    /* Title Large */
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    margin: 24px 0;
+}
+
+body {
+    /* Body Large */
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+p {
+    margin: 16px 0;
+}
+
+a {
+    color: var(--md-sys-color-primary);
+}
+
+.centered {
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* || Table */
+
+.table-container {
+    overflow-x: auto;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+td,
+th {
+    padding: 20px;
+    border: 1px solid;
+}
+
+td {
+    cursor: pointer;
+}
+
+@media (hover:none) {
+    td {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    td:active {
+        background-color: var(--md-sys-color-inverse-surface);
+        color: var(--md-sys-color-inverse-on-surface);
+        transition: none;
+    }
+}
+
+@media (hover:hover) {
+    td {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    td:hover {
+        background-color: var(--md-sys-color-inverse-surface);
+        color: var(--md-sys-color-inverse-on-surface);
+    }
+
+    td:active {
+        background-color: var(--md-sys-color-surface);
+        color: var(--md-sys-color-on-surface);
+        transition: none;
+    }
+}

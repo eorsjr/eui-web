@@ -1,0 +1,49 @@
+/* || Card - Common */
+
+:host {
+    width: 100%;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: width 1s ease, opacity 1s ease;
+    overflow: hidden;
+    border-radius: var(--md-sys-shape-corner-medium);
+}
+
+/* For compact and medium window classes */
+@media (max-width: 839px) {
+    .card {
+        width: calc(100% - 16px - 16px);
+    }
+}
+
+/* For expanded, large and extra-large window classes */
+@media (min-width: 840px) {
+    .card {
+        width: 66%;
+    }
+}
+
+/* || Card - Elevated */
+
+.card.elevated {
+    background-color: var(--md-sys-color-surface-container-low);
+    box-shadow: var(--elevation-level-1);
+}
+
+/* || Card - Filled */
+
+.card.filled {
+    background-color: var(--md-sys-color-surface-container-highest);
+}
+
+/* || Card - Outlined */
+
+.card.outlined {
+    border: 1px var(--md-sys-color-outline-variant) solid;
+    background-color: var(--md-sys-color-surface);
+}

@@ -1,0 +1,39 @@
+<div class="navigation-rail">
+    <div class="menu-button-container">
+        <eui-icon-button id="menu-button" size="m" color="standard" icon="menu_open" aria-label="Close Menu"
+            (click)="navService.toggleNavigationRail()">
+        </eui-icon-button>
+    </div>
+    <div class="nav-items">
+        <button class="nav-item" aria-label="Home" routerLink="/"
+            (click)="navService.toggleNavigationRail(); scrollingService.scrollToTop();">
+            <span class="material-symbols-outlined icon">home</span>
+            <span class="label-text">Home</span>
+        </button>
+        <button class="nav-item" aria-label="Components" routerLink="/components"
+            (click)="navService.toggleNavigationRail(); scrollingService.scrollToTop();">
+            <span class="material-symbols-outlined icon">dashboard</span>
+            <span class="label-text">Components</span>
+        </button>
+        <button class="nav-item" aria-label="Extras" routerLink="/extras"
+            (click)="navService.toggleNavigationRail(); scrollingService.scrollToTop();">
+            <span class="material-symbols-outlined icon">extension</span>
+            <span class="label-text">Extras</span>
+        </button>
+        <button class="nav-item" aria-label="Visuals" routerLink="/visuals"
+            (click)="navService.toggleNavigationRail(); scrollingService.scrollToTop();">
+            <span class="material-symbols-outlined icon">photo</span>
+            <span class="label-text">Visuals</span>
+        </button>
+        <button class="nav-item" aria-label="Contact" routerLink="/contact"
+            (click)="navService.toggleNavigationRail(); scrollingService.scrollToTop();">
+            <span class="material-symbols-outlined icon">contact_page</span>
+            <span class="label-text">Contact</span>
+        </button>
+        <button *ngFor="let item of [].constructor(2)" class="nav-item" aria-label="Other"
+            (click)="navService.toggleNavigationRail()">
+            <span class="material-symbols-outlined icon">stars</span>
+            <span class="label-text">Other</span>
+        </button>
+    </div>
+</div>

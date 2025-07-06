@@ -1,0 +1,180 @@
+/* || Icon button */
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* || Icon button - Size */
+
+/* || Icon button - Size - Icon */
+
+.icon-button.xs .icon {
+    font-size: 20px;
+}
+
+.icon-button.s .icon,
+.icon-button.m .icon {
+    font-size: 24px;
+}
+
+.icon-button.l .icon {
+    font-size: 32px;
+}
+
+.icon-button.xl .icon {
+    font-size: 40px;
+}
+
+/* || Button - Size - Width */
+
+.icon-button.xs.default-width {
+    height: 32px;
+    width: 32px;
+}
+
+.icon-button.xs.narrow-width {
+    height: 32px;
+    width: 28px;
+}
+
+.icon-button.xs.wide-width {
+    height: 32px;
+    width: 40px;
+}
+
+.icon-button.s.default-width {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-button.s.narrow-width {
+    height: 40px;
+    width: 32px;
+}
+
+.icon-button.s.wide-width {
+    height: 40px;
+    width: 52px;
+}
+
+.icon-button.m.default-width {
+    height: 56px;
+    width: 56px;
+}
+
+.icon-button.m.narrow-width {
+    height: 56px;
+    width: 48px;
+}
+
+.icon-button.m.wide-width {
+    height: 56px;
+    width: 72px;
+}
+
+.icon-button.l.default-width {
+    height: 96px;
+    width: 96px;
+}
+
+.icon-button.l.narrow-width {
+    height: 96px;
+    width: 64px;
+}
+
+.icon-button.l.wide-width {
+    height: 96px;
+    width: 128px;
+}
+
+.icon-button.xl.default-width {
+    height: 136px;
+    width: 136px;
+}
+
+.icon-button.xl.narrow-width {
+    height: 136px;
+    width: 104px;
+}
+
+.icon-button.xl.wide-width {
+    height: 136px;
+    width: 184px;
+}
+
+/* || Icon button - Shape */
+
+.icon-button.round {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+.icon-button.square.xs,
+.icon-button.square.s {
+    border-radius: var(--md-sys-shape-corner-medium);
+}
+
+.icon-button.square.m {
+    border-radius: var(--md-sys-shape-corner-large);
+}
+
+.icon-button.square.l,
+.icon-button.square.xl {
+    border-radius: var(--md-sys-shape-corner-extra-large);
+}
+
+/* || Icon button - Color */
+
+.icon-button.default.filled {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+.icon-button.default.tonal {
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+.icon-button.default.outlined {
+    background: none;
+    border: 1px var(--md-sys-color-outline) solid;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.icon-button.default.standard {
+    background: none;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* || Icon button - State */
+
+@media (hover:none) {
+    .icon-button {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    .icon-button:active {
+        background-color: var(--md-sys-color-inverse-surface) !important;
+        color: var(--md-sys-color-inverse-on-surface) !important;
+        transition: none;
+    }
+}
+
+@media (hover:hover) {
+    .icon-button {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    .icon-button:hover {
+        background-color: var(--md-sys-color-inverse-surface) !important;
+        color: var(--md-sys-color-inverse-on-surface) !important;
+    }
+
+    .icon-button:active {
+        background-color: var(--md-sys-color-surface) !important;
+        color: var(--md-sys-color-on-surface) !important;
+        transition: none;
+    }
+}

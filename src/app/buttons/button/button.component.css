@@ -1,0 +1,225 @@
+/* || Button */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 24px auto;
+    transition: border-radius 250ms ease-in-out;
+}
+
+/* || Button - Size */
+
+.button.xs {
+    height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.button.s {
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.button.m {
+    height: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.button.l {
+    height: 96px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.button.xl {
+    height: 136px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+/* || Button - Shape */
+
+.button.round.xs {
+    border-radius: var(--md-sys-shape-corner-large);
+}
+
+.button.round.s {
+    border-radius: var(--md-sys-shape-corner-large-increased);
+}
+
+.button.round.m {
+    border-radius: var(--md-sys-shape-corner-extra-large);
+}
+
+.button.round.l {
+    border-radius: var(--md-sys-shape-corner-extra-extra-large);
+}
+
+.button.round.xl {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+.button.square.xs,
+.button.square.s {
+    border-radius: var(--md-sys-shape-corner-small);
+}
+
+.button.square.m {
+    border-radius: var(--md-sys-shape-corner-large);
+}
+
+.button.square.l,
+.button.square.xl {
+    border-radius: var(--md-sys-shape-corner-extra-large);
+}
+
+/* || Button - Color */
+
+.button.default.elevated {
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-primary);
+    box-shadow: var(--elevation-level-1);
+}
+
+.button.filled {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+.button.tonal {
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+.button.outlined {
+    background: none;
+    border: 1px var(--md-sys-color-outline) solid;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.button.text {
+    background: none;
+    color: var(--md-sys-color-primary);
+}
+
+/* || Button - Typography */
+
+.button.xs .label-text,
+.button.s .label-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+.button.xs .icon,
+.button.s .icon {
+    font-size: 20px;
+}
+
+.button.xs .icon {
+    margin-right: 4px;
+}
+
+.button.s .icon,
+.button.m .icon {
+    margin-right: 8px;
+}
+
+.button.m .label-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.button.m .icon {
+    font-size: 24px;
+}
+
+.button.l .label-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.button.l .icon {
+    font-size: 32px;
+    margin-right: 12px;
+}
+
+.button.xl .label-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+.button.xl .icon {
+    font-size: 40px;
+    margin-right: 16px;
+}
+
+/* || Button - State */
+
+@media (hover:none) {
+    .button {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out, border-radius 250ms ease-in-out;
+    }
+
+    .button:active {
+        background-color: var(--md-sys-color-inverse-surface) !important;
+        color: var(--md-sys-color-inverse-on-surface) !important;
+        transition: none;
+    }
+
+    .button.xs:active,
+    .button.s:active {
+        border-radius: var(--md-sys-shape-corner-small) !important;
+    }
+
+    .button.m:active {
+        border-radius: var(--md-sys-shape-corner-medium) !important;
+    }
+
+    .button.l:active,
+    .button.xl:active {
+        border-radius: var(--md-sys-shape-corner-large) !important;
+    }
+}
+
+@media (hover:hover) {
+    .button {
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out, border-radius 250ms ease-in-out;
+    }
+
+    .button:hover {
+        background-color: var(--md-sys-color-inverse-surface) !important;
+        color: var(--md-sys-color-inverse-on-surface) !important;
+    }
+
+    .button:active {
+        background-color: var(--md-sys-color-surface) !important;
+        color: var(--md-sys-color-on-surface) !important;
+        transition: none;
+    }
+
+    .button.xs:active,
+    .button.s:active {
+        border-radius: var(--md-sys-shape-corner-small) !important;
+    }
+
+    .button.m:active {
+        border-radius: var(--md-sys-shape-corner-medium) !important;
+    }
+
+    .button.l:active,
+    .button.xl:active {
+        border-radius: var(--md-sys-shape-corner-large) !important;
+    }
+}
