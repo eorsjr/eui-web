@@ -1,0 +1,46 @@
+<h1>Extras</h1>
+<main>
+    <eui-card [variant]="'elevated'">
+        <h2>Features</h2>
+        <h3>Beyond Components</h3>
+        <div class="side-by-side">
+            <div class="left-side">
+                <ul>
+                    <li>
+                        <h4>Copy Table</h4>
+                        Copy entire tables or individual cells with one click.
+                    </li>
+                    <li>
+                        <h4>Toggle Color Palette</h4>
+                        Available palettes: silver, green, yellow, orange, pink, baseline, blue
+                    </li>
+                    <li>
+                        <h4>Toggle Color Scheme</h4>
+                        Switch between light and dark mode.
+                    </li>
+                    <li>
+                        <h4>Toggle Font</h4>
+                        Available fonts: Noto Sans, Anta, Limelight, Pattaya
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <table #copyableTable1>
+                    <tr>
+                        <th colspan="100%">Name</th>
+                    </tr>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                    </tr>
+                    <tr *ngFor="let row of copyableTable1Data">
+                        <td *ngFor="let cell of row" (click)="this.copyTableService.copyText(cell)">{{ cell }}</td>
+                    </tr>
+                </table>
+                <eui-button size="m" label="Copy table" icon="content_copy"
+                    (click)="this.copyTableService.copyTable(copyableTable1)" />
+            </div>
+        </div>
+        <p>See features related to visuals <a routerLink="/visuals">here</a>.</p>
+    </eui-card>
+</main>

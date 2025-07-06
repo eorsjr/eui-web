@@ -1,0 +1,88 @@
+<h1>Components</h1>
+<main>
+    <eui-card [variant]="'elevated'">
+        <h2>Introduction</h2>
+        <p>Many custom components are implemented. Learn more about some of them below.</p>
+        <div class="action-area">
+            <eui-button shape="square" color="tonal" label="Cards"
+                onclick="window.location.href='components#cards'"></eui-button>
+            <eui-button shape="square" color="tonal" label="Buttons"
+                onclick="window.location.href='components#buttons'"></eui-button>
+        </div>
+    </eui-card>
+    <eui-card [variant]="'elevated'" id="cards">
+        <h2>Cards</h2>
+        <ul>
+            <li>Use cards to contain related elements</li>
+            <li>Three types: elevated, filled, outlined</li>
+            <li>Contents can include anything from images to headlines, supporting text, buttons, and lists</li>
+            <li>Can also contain other components</li>
+            <li>Cards have flexible layouts and dimensions</li>
+        </ul>
+        <div class="action-area">
+            <eui-button shape="square" color="outlined" label="Elevated card"
+                onclick="window.location.href='components#elevated-card'" />
+            <eui-button shape="square" color="outlined" label="Filled card"
+                onclick="window.location.href='components#filled-card'" />
+            <eui-button shape="square" color="outlined" label="Outlined card"
+                onclick="window.location.href='components#outlined-card'" />
+        </div>
+    </eui-card>
+    <eui-card [variant]="'elevated'" id="elevated-card">
+        <div class="hero-content">
+            <img src="https://placehold.co/3000x2000" width="3000px" height="2000px" alt="Template Image 3000x2000">
+        </div>
+        <h2>Elevated Card</h2>
+        <h3>Subhead</h3>
+        <p>Elevated cards have a drop shadow, providing more separation from the background than filled cards, but less
+            than outlined cards.</p>
+        <p>Fun fact: You can add beautiful hero content to cards that sit at the top.</p>
+    </eui-card>
+    <eui-card [variant]="'filled'" id="filled-card">
+        <h2>Filled Card</h2>
+        <h3>Subhead</h3>
+        <div class="side-by-side">
+            <div class="left-side">
+                <p>Filled cards provide subtle separation from the background. This has less emphasis than elevated or
+                    outlined cards.</p>
+                <p>Fun facts:</p>
+                <ul>
+                    <li>EUI Web supports lists.</li>
+                    <li>THe Side-by-Side feature allows you to display content next to each other.</li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <p><img src="https://placehold.co/3000x2000" width="3000px" height="2000px" alt="Template Image 3000x2000"></p>
+            </div>
+        </div>
+    </eui-card>
+    <eui-card [variant]="'outlined'" id="outlined-card">
+        <h2>Outlined Card</h2>
+        <h3>Subhead</h3>
+        <p>Outlined cards have a visual boundary around the container. This can provide greater emphasis than the other
+            types.</p>
+        <p>Fun fact: You can add multiple buttons next to each other in cards via the action area.</p>
+        <div class="action-area">
+            <eui-button color="tonal" />
+            <eui-button color="tonal" icon="stars" />
+        </div>
+    </eui-card>
+    <eui-card [variant]="'elevated'" id="buttons">
+        <h2>Buttons</h2>
+        <ul>
+            <li>Can contain an optional leading icon</li>
+            <li>Five color options: elevated, filled, tonal, outlined, and text</li>
+            <li>Five size recommendations: extra small, small, medium, large, and extra large</li>
+            <li>Two shape options: round and square</li>
+            <li>Keep labels concise and use sentence case</li>
+        </ul>
+        <p>See some examples below. For information about usage guidelines, visit <a
+                href="https://material.io/components/buttons/guidelines" target="_blank">Material Design</a>.</p>
+        <div class="action-area">
+            <eui-button size="m" shape="round" label="Filled medium button" />
+            <eui-button shape="round" color="tonal" label="Tonal button with icon" icon="stars" />
+            <eui-button shape="square" color="outlined" label="Outlined square button" />
+            <eui-button color="text" label="Text button" />
+        </div>
+    </eui-card>
+</main>

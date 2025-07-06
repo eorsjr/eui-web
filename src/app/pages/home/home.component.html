@@ -3,59 +3,16 @@
     { src: 'https://placehold.co/3000x2000', alt: 'Template Image 3000x2000' },
     { src: 'https://placehold.co/4000x3000', alt: 'Template Image 4000x3000' }
   ]" />
-<h1>Page Heading</h1>
+<h1>Home</h1>
 <main>
     <eui-card [variant]="'elevated'">
-        <h2>Elevated Card</h2>
-        <h3>Subhead</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Justo eget magna fermentum iaculis eu non. Ipsum dolor sit amet consectetur.
-            Quis ipsum suspendisse ultrices gravida dictum fusce ut. Sodales ut eu sem integer vitae justo eget
-            magna. <a href="#!">Link.</a></p>
-        <div class="action-area">
-            <eui-button shape="square" color="tonal" label="Filled card"
-                onclick="window.location.href='#filled-card'"></eui-button>
-            <eui-button shape="square" color="outlined" label="Outlined card"
-                onclick="window.location.href='#outlined-card'"></eui-button>
-        </div>
-    </eui-card>
-    <eui-card [variant]="'filled'" id="filled-card">
-        <h2>Filled Card</h2>
-        <h3>Subhead</h3>
-        <div class="side-by-side">
-            <div class="left-side">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                <ul>
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>List item 3</li>
-                </ul>
-            </div>
-            <div class="right-side">
-                <table #copyableTable1>
-                    <tr>
-                        <th colspan="100%">Name</th>
-                    </tr>
-                    <tr>
-                        <th>First name</th>
-                        <th>Last name</th>
-                    </tr>
-                    <tr *ngFor="let row of copyableTable1Data">
-                        <td *ngFor="let cell of row" (click)="copyCell(cell)">{{ cell }}</td>
-                    </tr>
-                </table>
-                <eui-button size="m" label="Copy table" icon="content_copy"
-                    (click)="copyTable(copyableTable1)"></eui-button>
-            </div>
-        </div>
-    </eui-card>
-    <eui-card [variant]="'outlined'" id="outlined-card">
-        <h2>Outlined Card</h2>
-        <h3>Subhead</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Justo eget magna fermentum iaculis eu non. Ipsum dolor sit amet consectetur.
-            Quis ipsum suspendisse ultrices gravida dictum fusce ut. Sodales ut eu sem integer vitae justo eget
-            magna.</p>
+        <h2>Welcome to EUI Web!</h2>
+        <h3>Introduction</h3>
+        <p>This project is an Angular-based website template inspired by Google's Material Design 3 Guidelines. Since
+            Material Web Components (MWC) entered maintenance mode on June 10, 2024, this project focuses on building
+            custom components to ensure independence from MWC.</p>
+        <p>Additionally, features unrelated to MWC are also being developed to improve the usability and modularity of
+            the template. Feel free to check out <a href="https://material.io/" target="_blank">Material Design</a> or
+            the <a href="https://github.com/eorsjr/eui-web" target="_blank">GitHub repository</a> of this project!</p>
     </eui-card>
 </main>

@@ -4,11 +4,11 @@ import { ImageGridComponent } from "../../image-grid/image-grid.component";
 import { CardComponent } from "../../card/card.component";
 
 @Component({
-  selector: 'app-gallery',
+  selector: 'app-visuals',
   standalone: true,
   imports: [SlideshowComponent, ImageGridComponent, CardComponent],
-  templateUrl: './gallery.component.html'
+  templateUrl: './visuals.component.html'
 })
-export class GalleryComponent {
+export class VisualsComponent {
 
 }
