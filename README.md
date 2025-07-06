@@ -31,7 +31,7 @@ Additionally, features unrelated to MWC are also being developed to improve the 
 - **Pane**
 - **Scrim**
 
-#### Additional Features
+#### Extras
 - **Copy Table**
     - Copy entire tables or individual cells with one click.
 - **Image Grid**
