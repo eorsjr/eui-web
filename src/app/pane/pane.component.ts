@@ -14,12 +14,23 @@ export class PaneComponent {
   constructor(private router: Router, private scrollingService: ScrollingService) { }
 
   /**
-   * Subscribes to router navigation events.
-   * - Enables scrolling after navigation.
-   * - If the URL contains a fragment, attempts to smoothly scroll to the corresponding element.
+   * Lifecycle hook that runs after component initialization.
+   * 
+   * - Adds a temporary `.preload` class to the `.pane` element to prevent transitions on route load.
+   * - Subscribes to router navigation events:
+   *    - Enables scrolling via the ScrollingService.
+   *    - Scrolls to top after navigation.
+   *    - If the URL contains a fragment, attempts to smoothly scroll to the corresponding element.
    * @returns {void}
    */
   ngOnInit(): void {
+    const pane = document.querySelector('.pane');
+    if (pane) {
+      pane.classList.add('preload');
+      setTimeout(() => {
+        pane.classList.remove('preload');
+      }, 100);
+    }
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
