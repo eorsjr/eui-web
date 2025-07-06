@@ -1,6 +1,6 @@
 {
-  "name": "angular-website-template",
-  "short_name": "angular-website-template",
+  "name": "EUI Web",
+  "short_name": "EUI",
   "display": "standalone",
   "scope": "./",
   "start_url": "./"
