@@ -5,7 +5,7 @@ import { FlexibleNavigationBarComponent } from "./flexible-navigation-bar/flexib
 import { NavigationRailComponent } from "./navigation-rail/navigation-rail.component";
 
 @Component({
-  selector: 'eui-navigation',
+  selector: 'cxw-navigation',
   standalone: true,
   imports: [FlexibleNavigationBarComponent, NavigationRailComponent],
   templateUrl: './navigation.component.html'

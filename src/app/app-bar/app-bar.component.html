@@ -1,24 +1,24 @@
 <header class="app-bar">
-    <eui-icon-button id="menu-button" size="m" color="standard"
+    <cxw-icon-button id="menu-button" size="m" color="standard"
         icon="{{ navService.navigationRailOpen() ? 'menu_open' : 'menu' }}"
         [attr.aria-label]="navService.navigationRailOpen() ? 'Close Menu' : 'Open Menu'"
         (click)="navService.toggleNavigationRail()">
-    </eui-icon-button>
+    </cxw-icon-button>
     <div class="text-container">
         <div id="headline">EUI Web</div>
         <div id="subtitle">Template</div>
     </div>
     <div class="trailing-icons">
-        <eui-icon-button id="color-scheme-button" size="s" color="standard"
+        <cxw-icon-button id="color-scheme-button" size="s" color="standard"
             icon="{{ themeService.isDarkMode() ? 'light_mode' : 'dark_mode' }}"
             [attr.aria-label]="themeService.isDarkMode() ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
             (click)="toggleColorScheme()">
-        </eui-icon-button>
-        <eui-icon-button id="palette-button" size="s" color="standard" icon="palette" aria-label="Toggle Color Palette"
+        </cxw-icon-button>
+        <cxw-icon-button id="palette-button" size="s" color="standard" icon="palette" aria-label="Toggle Color Palette"
             (click)="switchTheme()">
-        </eui-icon-button>
-        <eui-icon-button id="font-button" size="s" color="standard" icon="brand_family" aria-label="Toggle Font"
+        </cxw-icon-button>
+        <cxw-icon-button id="font-button" size="s" color="standard" icon="brand_family" aria-label="Toggle Font"
             (click)="switchFont()">
-        </eui-icon-button>
+        </cxw-icon-button>
     </div>
 </header>

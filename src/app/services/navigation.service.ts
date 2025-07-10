@@ -17,7 +17,7 @@ export class NavigationService {
    * @returns {void}
    */
   public toggleNavigationRail(): void {
-    const rail = document.querySelector('eui-navigation-rail');
+    const rail = document.querySelector('cxw-navigation-rail');
 
     if (rail) {
       if (window.innerWidth < 840) {
@@ -48,7 +48,7 @@ export class NavigationService {
    * @returns {void}
    */
   public closeNavigationRail(): void {
-    const rail = document.querySelector('eui-navigation-rail');
+    const rail = document.querySelector('cxw-navigation-rail');
 
     if (rail) {
       this.navigationRailOpen.set(false);

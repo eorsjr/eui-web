@@ -80,7 +80,7 @@ export class ScrollingService {
    * @returns {void}
    */
   public handleScrollVisibility(): void {
-    const navComponent = document.querySelector('eui-flexible-navigation-bar') as HTMLElement;
+    const navComponent = document.querySelector('cxw-flexible-navigation-bar') as HTMLElement;
     const appBar = document.querySelector('.app-bar') as HTMLElement;
 
     const currentScrollPos = window.scrollY;

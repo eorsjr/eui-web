@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'eui-button',
+  selector: 'cxw-button',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './button.component.html',

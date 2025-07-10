@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'eui-slideshow',
+  selector: 'cxw-slideshow',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './slideshow.component.html',

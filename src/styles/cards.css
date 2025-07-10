@@ -1,18 +1,18 @@
 /* || Card related global styles */
 
-eui-card .hero-content {
+cxw-card .hero-content {
     aspect-ratio: 16/9;
     margin-left: -16px;
     margin-right: -16px;
 }
 
-eui-card .hero-content img {
+cxw-card .hero-content img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-eui-card img {
+cxw-card img {
     height: auto;
     width: 100%;
 }

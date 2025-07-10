@@ -4,7 +4,7 @@ import { filter } from 'rxjs/operators';
 import { ScrollingService } from '../services/scrolling.service';
 
 @Component({
-  selector: 'eui-pane',
+  selector: 'cxw-pane',
   standalone: true,
   imports: [RouterModule],
   templateUrl: './pane.component.html',

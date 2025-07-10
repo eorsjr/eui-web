@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ScrollingService } from '../../services/scrolling.service';
 
 @Component({
-  selector: 'eui-flexible-navigation-bar',
+  selector: 'cxw-flexible-navigation-bar',
   standalone: true,
   imports: [RouterModule],
   templateUrl: './flexible-navigation-bar.component.html',

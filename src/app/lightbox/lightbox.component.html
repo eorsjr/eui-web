@@ -1,12 +1,12 @@
-<eui-icon-button id="close-button" color="filled" size="m" icon="close" aria-label="Close Lightbox"
+<cxw-icon-button id="close-button" color="filled" size="m" icon="close" aria-label="Close Lightbox"
   (click)="closeLightbox()">
-</eui-icon-button>
-<eui-icon-button id="previous-button" color="tonal" size="s" icon="arrow_back" aria-label="Previous"
+</cxw-icon-button>
+<cxw-icon-button id="previous-button" color="tonal" size="s" icon="arrow_back" aria-label="Previous"
   (click)="showPreviousImage()">
-</eui-icon-button>
-<eui-icon-button id="next-button" color="tonal" size="s" icon="arrow_forward" aria-label="Next"
+</cxw-icon-button>
+<cxw-icon-button id="next-button" color="tonal" size="s" icon="arrow_forward" aria-label="Next"
   (click)="showNextImage()">
-</eui-icon-button>
+</cxw-icon-button>
 <ng-container *ngIf="lightboxService.currentImage() as img">
   <img id="lightbox-image" [src]="img.src" [alt]="img.alt || ''" [class.fade-in]="loaded" (load)="onImageLoad()">
   <div id="lightbox-caption">{{ img.alt }}</div>

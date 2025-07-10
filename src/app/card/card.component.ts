@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'eui-card',
+  selector: 'cxw-card',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './card.component.html',

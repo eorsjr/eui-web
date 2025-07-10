@@ -4,7 +4,7 @@ import { NavigationService } from '../services/navigation.service';
 import { ScrimService } from '../services/scrim.service';
 
 @Component({
-  selector: 'eui-scrim',
+  selector: 'cxw-scrim',
   standalone: true,
   templateUrl: './scrim.component.html',
   styleUrls: ['./scrim.component.css']

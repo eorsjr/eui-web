@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { IconButtonComponent } from '../buttons/icon-button/icon-button.component';
 
 @Component({
-  selector: 'eui-lightbox',
+  selector: 'cxw-lightbox',
   standalone: true,
   imports: [CommonModule, IconButtonComponent],
   templateUrl: './lightbox.component.html',

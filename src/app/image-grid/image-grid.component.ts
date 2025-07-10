@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LightboxTargetDirective } from '../directives/lightbox-target.directive';
 
 @Component({
-  selector: 'eui-image-grid',
+  selector: 'cxw-image-grid',
   standalone: true,
   imports: [CommonModule, LightboxTargetDirective],
   templateUrl: './image-grid.component.html',

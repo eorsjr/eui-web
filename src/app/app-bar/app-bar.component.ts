@@ -4,7 +4,7 @@ import { NavigationService } from '../services/navigation.service';
 import { IconButtonComponent } from '../buttons/icon-button/icon-button.component';
 
 @Component({
-  selector: 'eui-app-bar',
+  selector: 'cxw-app-bar',
   standalone: true,
   imports: [IconButtonComponent],
   templateUrl: './app-bar.component.html',

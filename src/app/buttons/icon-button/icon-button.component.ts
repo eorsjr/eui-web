@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'eui-icon-button',
+  selector: 'cxw-icon-button',
   standalone: true,
   imports: [],
   templateUrl: './icon-button.component.html',

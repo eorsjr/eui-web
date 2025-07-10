@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { IconButtonComponent } from '../../buttons/icon-button/icon-button.component';
 
 @Component({
-  selector: 'eui-navigation-rail',
+  selector: 'cxw-navigation-rail',
   standalone: true,
   imports: [RouterModule, CommonModule, IconButtonComponent],
   templateUrl: './navigation-rail.component.html',

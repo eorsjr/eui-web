@@ -1,6 +1,6 @@
 <h1>Extras</h1>
 <main>
-    <eui-card [variant]="'elevated'">
+    <cxw-card [variant]="'elevated'">
         <h2>Features</h2>
         <h3>Beyond Components</h3>
         <div class="side-by-side">
@@ -37,10 +37,10 @@
                         <td *ngFor="let cell of row" (click)="this.copyTableService.copyText(cell)">{{ cell }}</td>
                     </tr>
                 </table>
-                <eui-button size="m" label="Copy table" icon="content_copy"
+                <cxw-button size="m" label="Copy table" icon="content_copy"
                     (click)="this.copyTableService.copyTable(copyableTable1)" />
             </div>
         </div>
         <p>See features related to visuals <a routerLink="/visuals">here</a>.</p>
-    </eui-card>
+    </cxw-card>
 </main>

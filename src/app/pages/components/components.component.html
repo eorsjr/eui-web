@@ -1,16 +1,16 @@
 <h1>Components</h1>
 <main>
-    <eui-card [variant]="'elevated'">
+    <cxw-card [variant]="'elevated'">
         <h2>Introduction</h2>
         <p>Many custom components are implemented. Learn more about some of them below.</p>
         <div class="action-area">
-            <eui-button shape="square" color="tonal" label="Cards"
-                onclick="window.location.href='components#cards'"></eui-button>
-            <eui-button shape="square" color="tonal" label="Buttons"
-                onclick="window.location.href='components#buttons'"></eui-button>
+            <cxw-button shape="square" color="tonal" label="Cards"
+                onclick="window.location.href='components#cards'"></cxw-button>
+            <cxw-button shape="square" color="tonal" label="Buttons"
+                onclick="window.location.href='components#buttons'"></cxw-button>
         </div>
-    </eui-card>
-    <eui-card [variant]="'elevated'" id="cards">
+    </cxw-card>
+    <cxw-card [variant]="'elevated'" id="cards">
         <h2>Cards</h2>
         <ul>
             <li>Use cards to contain related elements</li>
@@ -20,15 +20,15 @@
             <li>Cards have flexible layouts and dimensions</li>
         </ul>
         <div class="action-area">
-            <eui-button shape="square" color="outlined" label="Elevated card"
+            <cxw-button shape="square" color="outlined" label="Elevated card"
                 onclick="window.location.href='components#elevated-card'" />
-            <eui-button shape="square" color="outlined" label="Filled card"
+            <cxw-button shape="square" color="outlined" label="Filled card"
                 onclick="window.location.href='components#filled-card'" />
-            <eui-button shape="square" color="outlined" label="Outlined card"
+            <cxw-button shape="square" color="outlined" label="Outlined card"
                 onclick="window.location.href='components#outlined-card'" />
         </div>
-    </eui-card>
-    <eui-card [variant]="'elevated'" id="elevated-card">
+    </cxw-card>
+    <cxw-card [variant]="'elevated'" id="elevated-card">
         <div class="hero-content">
             <img src="https://placehold.co/3000x2000" width="3000px" height="2000px" alt="Template Image 3000x2000">
         </div>
@@ -37,8 +37,8 @@
         <p>Elevated cards have a drop shadow, providing more separation from the background than filled cards, but less
             than outlined cards.</p>
         <p>Fun fact: You can add beautiful hero content to cards that sit at the top.</p>
-    </eui-card>
-    <eui-card [variant]="'filled'" id="filled-card">
+    </cxw-card>
+    <cxw-card [variant]="'filled'" id="filled-card">
         <h2>Filled Card</h2>
         <h3>Subhead</h3>
         <div class="side-by-side">
@@ -55,19 +55,19 @@
                 <p><img src="https://placehold.co/3000x2000" width="3000px" height="2000px" alt="Template Image 3000x2000"></p>
             </div>
         </div>
-    </eui-card>
-    <eui-card [variant]="'outlined'" id="outlined-card">
+    </cxw-card>
+    <cxw-card [variant]="'outlined'" id="outlined-card">
         <h2>Outlined Card</h2>
         <h3>Subhead</h3>
         <p>Outlined cards have a visual boundary around the container. This can provide greater emphasis than the other
             types.</p>
         <p>Fun fact: You can add multiple buttons next to each other in cards via the action area.</p>
         <div class="action-area">
-            <eui-button color="tonal" />
-            <eui-button color="tonal" icon="stars" />
+            <cxw-button color="tonal" />
+            <cxw-button color="tonal" icon="stars" />
         </div>
-    </eui-card>
-    <eui-card [variant]="'elevated'" id="buttons">
+    </cxw-card>
+    <cxw-card [variant]="'elevated'" id="buttons">
         <h2>Buttons</h2>
         <ul>
             <li>Can contain an optional leading icon</li>
@@ -79,10 +79,10 @@
         <p>See some examples below. For information about usage guidelines, visit <a
                 href="https://material.io/components/buttons/guidelines" target="_blank">Material Design</a>.</p>
         <div class="action-area">
-            <eui-button size="m" shape="round" label="Filled medium button" />
-            <eui-button shape="round" color="tonal" label="Tonal button with icon" icon="stars" />
-            <eui-button shape="square" color="outlined" label="Outlined square button" />
-            <eui-button color="text" label="Text button" />
+            <cxw-button size="m" shape="round" label="Filled medium button" />
+            <cxw-button shape="round" color="tonal" label="Tonal button with icon" icon="stars" />
+            <cxw-button shape="square" color="outlined" label="Outlined square button" />
+            <cxw-button color="text" label="Text button" />
         </div>
-    </eui-card>
+    </cxw-card>
 </main>
