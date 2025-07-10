@@ -2,7 +2,7 @@
 
 /* || Navigation Bar - Common */
 
-.flexible-navigation-bar {
+:host {
   display: flex;
   position: fixed;
   z-index: 1;
@@ -20,16 +20,16 @@
   transition: transform 0.5s ease;
 }
 
-.flexible-navigation-bar::-webkit-scrollbar {
+:host::-webkit-scrollbar {
   display: none;
   /* WebKit browsers */
 }
 
-.flexible-navigation-bar.remove {
+:host.remove {
   transform: translateY(100%);
 }
 
-.flexible-navigation-bar .nav-item {
+:host .nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.flexible-navigation-bar .nav-item .label-text {
+:host .nav-item .label-text {
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -45,11 +45,11 @@
   color: var(--md-sys-color-on-surface-variant);
 }
 
-.flexible-navigation-bar .nav-item#active-indicator .label-text {
+:host .nav-item#active-indicator .label-text {
   color: var(--md-sys-color-secondary);
 }
 
-.flexible-navigation-bar .nav-item .icon {
+:host .nav-item .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
   color: var(--md-sys-color-on-surface-variant);
 }
 
-.flexible-navigation-bar .nav-item#active-indicator .icon {
+:host .nav-item#active-indicator .icon {
   font-variation-settings:
     'FILL' 1;
   color: var(--md-sys-color-on-secondary-container);
@@ -67,85 +67,85 @@
 
 @media (max-width: 599px) {
 
-  .flexible-navigation-bar {
+  :host {
     padding-top: 6px;
     padding-bottom: 6px;
   }
 
   /* For standalone mode */
   @media (display-mode:standalone) {
-    .flexible-navigation-bar {
+    :host {
       height: auto;
       min-height: 64px;
       padding-bottom: env(safe-area-inset-bottom);
     }
   }
 
-  .flexible-navigation-bar .nav-item {
+  :host .nav-item {
     flex-direction: column;
   }
 
-  .flexible-navigation-bar .nav-item .label-text {
+  :host .nav-item .label-text {
     margin-top: 4px;
   }
 
-  .flexible-navigation-bar .nav-item .icon {
+  :host .nav-item .icon {
     height: 32px;
     width: 56px;
     border-radius: var(--md-sys-shape-corner-full);
     color: var(--md-sys-color-on-surface-variant);
   }
 
-  .flexible-navigation-bar .nav-item#active-indicator .icon {
+  :host .nav-item#active-indicator .icon {
     background-color: var(--md-sys-color-secondary-container);
   }
 
   @media (hover:none) {
-    .flexible-navigation-bar .nav-item .icon {
+    :host .nav-item .icon {
       transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item .label-text {
+    :host .nav-item .label-text {
       transition: color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item:active .icon {
+    :host .nav-item:active .icon {
       background-color: var(--md-sys-color-inverse-surface) !important;
       color: var(--md-sys-color-inverse-on-surface) !important;
       transition: none;
     }
 
-    .flexible-navigation-bar .nav-item:active .label-text {
+    :host .nav-item:active .label-text {
       color: var(--md-sys-color-on-surface) !important;
       transition: none;
     }
   }
 
   @media (hover:hover) {
-    .flexible-navigation-bar .nav-item .icon {
+    :host .nav-item .icon {
       transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item .label-text {
+    :host .nav-item .label-text {
       transition: color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item:hover .icon {
+    :host .nav-item:hover .icon {
       background-color: var(--md-sys-color-inverse-surface) !important;
       color: var(--md-sys-color-inverse-on-surface) !important;
     }
 
-    .flexible-navigation-bar .nav-item:hover .label-text {
+    :host .nav-item:hover .label-text {
       color: var(--md-sys-color-on-surface) !important;
     }
 
-    .flexible-navigation-bar .nav-item:active .icon {
+    :host .nav-item:active .icon {
       background-color: var(--md-sys-color-surface) !important;
       color: var(--md-sys-color-on-surface) !important;
       transition: none;
     }
 
-    .flexible-navigation-bar .nav-item:active .label-text {
+    :host .nav-item:active .label-text {
       color: var(--md-sys-color-on-surface) !important;
       transition: none;
     }
@@ -156,13 +156,13 @@
 
 @media (min-width: 600px) and (max-width: 839px) {
 
-  .flexible-navigation-bar {
+  :host {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
 
-  .flexible-navigation-bar .nav-item {
+  :host .nav-item {
     height: 40px;
     padding-left: 16px;
     padding-right: 16px;
@@ -171,64 +171,64 @@
 
   }
 
-  .flexible-navigation-bar .nav-item#active-indicator {
+  :host .nav-item#active-indicator {
     background-color: var(--md-sys-color-secondary-container);
     color: var(--md-sys-color-secondary);
   }
 
-  .flexible-navigation-bar .nav-item .icon {
+  :host .nav-item .icon {
     height: 32px;
     color: var(--md-sys-color-on-surface-variant);
   }
 
   @media (hover:none) {
-    .flexible-navigation-bar .nav-item {
+    :host .nav-item {
       transition: background-color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item .icon,
-    .flexible-navigation-bar .nav-item .label-text {
+    :host .nav-item .icon,
+    :host .nav-item .label-text {
       transition: color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item:active {
+    :host .nav-item:active {
       background-color: var(--md-sys-color-inverse-surface) !important;
       transition: none;
     }
 
-    .flexible-navigation-bar .nav-item:active .icon,
-    .flexible-navigation-bar .nav-item:active .label-text {
+    :host .nav-item:active .icon,
+    :host .nav-item:active .label-text {
       color: var(--md-sys-color-inverse-on-surface) !important;
       transition: none;
     }
   }
 
   @media (hover:hover) {
-    .flexible-navigation-bar .nav-item {
+    :host .nav-item {
       transition: background-color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item .icon,
-    .flexible-navigation-bar .nav-item .label-text {
+    :host .nav-item .icon,
+    :host .nav-item .label-text {
       transition: color 250ms ease-in-out;
     }
 
-    .flexible-navigation-bar .nav-item:hover {
+    :host .nav-item:hover {
       background-color: var(--md-sys-color-inverse-surface) !important;
     }
 
-    .flexible-navigation-bar .nav-item:hover .icon,
-    .flexible-navigation-bar .nav-item:hover .label-text {
+    :host .nav-item:hover .icon,
+    :host .nav-item:hover .label-text {
       color: var(--md-sys-color-inverse-on-surface) !important;
     }
 
-    .flexible-navigation-bar .nav-item:active {
+    :host .nav-item:active {
       background-color: var(--md-sys-color-surface) !important;
       transition: none;
     }
 
-    .flexible-navigation-bar .nav-item:active .icon,
-    .flexible-navigation-bar .nav-item:active .label-text {
+    :host .nav-item:active .icon,
+    :host .nav-item:active .label-text {
       color: var(--md-sys-color-on-surface) !important;
       transition: none;
     }
@@ -238,7 +238,7 @@
 /* || Navigation Bar - For expanded, large and extra-large window classes */
 
 @media (min-width: 840px) {
-  .flexible-navigation-bar {
+  :host {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -11,4 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
   @Input() variant: 'elevated' | 'filled' | 'outlined' = 'elevated';
+  
+  @HostBinding('class') get hostClass() {
+    return this.variant;
+  }
 }

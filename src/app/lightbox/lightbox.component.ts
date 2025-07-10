@@ -8,7 +8,10 @@ import { IconButtonComponent } from '../buttons/icon-button/icon-button.componen
   standalone: true,
   imports: [CommonModule, IconButtonComponent],
   templateUrl: './lightbox.component.html',
-  styleUrl: './lightbox.component.css'
+  styleUrl: './lightbox.component.css',
+  host: {
+    '[class.visible]': 'lightboxService.lightboxOpen()'
+  }
 })
 export class LightboxComponent {
 

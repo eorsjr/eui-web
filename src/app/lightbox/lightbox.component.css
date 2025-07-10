@@ -1,6 +1,6 @@
 /* || Lightbox */
 
-.lightbox {
+:host {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     right: env(safe-area-inset-right);
 }
 
-.lightbox.visible {
+:host.visible {
     display: flex;
 }
 
@@ -35,20 +35,20 @@
 
 /* || Lightbox buttons */
 
-.lightbox #close-button {
+:host #close-button {
     position: absolute;
     top: 24px;
     right: 24px;
     z-index: 4;
 }
 
-.lightbox #previous-button {
+:host #previous-button {
     position: absolute;
     left: 24px;
     z-index: 4;
 }
 
-.lightbox #next-button {
+:host #next-button {
     position: absolute;
     right: 24px;
     z-index: 4;

@@ -1,6 +1,6 @@
 /* || Image grid */
 
-.image-grid {
+:host {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
 
 /* For compact, medium and expanded window classes */
 @media (max-width:1199px) {
-    .image-grid .clickable-image {
+    :host .clickable-image {
         flex: 49%;
         max-width: 49%;
     }
@@ -20,7 +20,7 @@
 
 /* For large and extra-large window classes */
 @media (min-width:1200px) {
-    .image-grid .clickable-image {
+    :host .clickable-image {
         flex: 32%;
         max-width: 32%;
     }

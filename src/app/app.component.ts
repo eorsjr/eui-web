@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ScrimComponent } from './scrim/scrim.component';
 import { LightboxComponent } from './lightbox/lightbox.component';
+import { LightboxService } from './services/lightbox.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,7 @@ import { LightboxComponent } from './lightbox/lightbox.component';
 export class AppComponent {
   title = 'eui-web';
 
-  constructor(private router: Router, private themeService: ThemeService, private elevationService: ElevationService, private navigationService: NavigationService) {
+  constructor(private router: Router, private themeService: ThemeService, private elevationService: ElevationService, private navigationService: NavigationService, private lightboxService: LightboxService) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {

@@ -1,6 +1,7 @@
 /* || Slidehow */
 
-.slideshow-container {
+:host {
+    display: block;
     aspect-ratio: 2.4/1;
 }
 
