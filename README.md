@@ -1,6 +1,6 @@
-# EUI Web
+# codeX WebSight
 
-This project is an Angular-based website template inspired by Google's Material Design 3 Guidelines. Since Material Web Components (MWC) entered maintenance mode on June 10, 2024, this project focuses on building custom components to ensure independence from MWC.
+codeX WebSight is an Angular-based website template inspired by Google's Material Design Guidelines. Since Material Web Components (MWC) entered maintenance mode on June 10, 2024, this project focuses on building custom components to ensure independence from MWC.
 
 Additionally, features unrelated to MWC are also being developed to improve the usability and modularity of the template.
 

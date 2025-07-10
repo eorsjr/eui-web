@@ -1,6 +1,6 @@
 {
-  "name": "EUI Web",
-  "short_name": "EUI",
+  "name": "codeX WebSight",
+  "short_name": "CXW",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

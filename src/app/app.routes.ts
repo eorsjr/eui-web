@@ -9,26 +9,26 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Home - EUI Web'
+    title: 'Home - codeX WebSight'
   },
   {
     path: 'components',
     component: ComponentsComponent,
-    title: 'Components - EUI Web'
+    title: 'Components - codeX WebSight'
   },
   {
     path: 'extras',
     component: ExtrasComponent,
-    title: 'Extras - EUI Web'
+    title: 'Extras - codeX WebSight'
   },
   {
     path: 'visuals',
     component: VisualsComponent,
-    title: 'Visuals - EUI Web'
+    title: 'Visuals - codeX WebSight'
   },
   {
     path: 'contact',
     component: ContactComponent,
-    title: 'Contact - EUI Web'
+    title: 'Contact - codeX WebSight'
   }
 ];
